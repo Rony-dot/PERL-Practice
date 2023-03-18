@@ -20,6 +20,6 @@
 | 0175 | Octal |
 | AF0230 | Hexadecimal |
 
-- Combination of 0 and 1 represents a binary number with base 2.
-- Number with a leading 0 comes in the category of octal numbers with base 8.
-- Number containing alphabets (a, b, c, d, e, f) are hexadecimal numbers with base 16.
+- Combination of 0 and 1 represents a `binary` number with base 2.
+- Number with a leading 0 comes in the category of `octal` numbers with base 8.
+- Number containing alphabets (a, b, c, d, e, f) are `hexadecimal` numbers with base 16.
