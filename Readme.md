@@ -8,4 +8,14 @@
 ## Perl Literals
 - Perl numeric literals are numbers. Perl stores number internally as either signed integers or floating-point values.
 - Perl numeric literals can be assigned following types of formats.
+
 | Number | Type |
+| - | - |
+| 526 | Integer |
+| 5.5 | Floating-Point |
+| 5e10 | Scientific Notation |
+| 5.5E | Scientific Notation |
+| 5_549_63 | A large Number |
+| 010101 | Binary |
+| 0175 | Octal |
+| AF0230 | Hexadecimal |
