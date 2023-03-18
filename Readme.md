@@ -23,3 +23,7 @@
 - Combination of 0 and 1 represents a `binary` number with base 2.
 - Number with a leading 0 comes in the category of `octal` numbers with base 8.
 - Number containing alphabets (a, b, c, d, e, f) are `hexadecimal` numbers with base 16.
+
+## Perl String Literals
+- Perl string literals contain an empty string. ASCII test, ACII with high bits or binary data. There is `no limit` in a string to contain data. They are surrounded by either a single quote (') or double quote (").
+- `Variable interpolation` is allowed in `double quote` string but not in single quote string. Also `special characters preceding with backslash` (\) are supported by `double quote` strings only.
