@@ -5,3 +5,7 @@
     - `Scalars`: Perl Scalars are a single data item. They are simple variables, preceded by a ($) sign. A scalar can be a number, a reference (adress of a variable) or a string.
     - `Arrays`: Perl arays are an ordered list of scalars. They aer preceded by (@) sign and accessed by their index numbers which starts with 0.
     - `Hashes`: Perl hashes are an unordered collection of key-value pairs. They are preceded by (%) sign and accessed using keys.
+## Perl Literals
+- Perl numeric literals are numbers. Perl stores number internally as either signed integers or floating-point values.
+- Perl numeric literals can be assigned following types of formats.
+| Number | Type |
