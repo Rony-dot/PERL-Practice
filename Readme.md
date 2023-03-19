@@ -66,7 +66,7 @@
     say $b;
 ```
 output:
-```output
+```perl
 23
 Anastasia
 9th
@@ -96,7 +96,7 @@ $city = "Delhi";
 say $city;
 ```
 Output:
-```output
+```perl
 Red
 Delhi
 ```
@@ -118,5 +118,38 @@ say $x - $y;
 say $x * $y;
 say $x . $y;
 say $x x $y;
-
 ```
+```perl
+3
+8
+2
+15
+1.66666666666667
+53
+555
+```
+
+## Perl Special Literals
+- There are three special literals in Perl:
+- `__FILE__`: it represents the `current file name`.
+- `__LINE__`: it represents the `current line number`.
+- `__PACKAGE__`: it represents the `package name at that point` in your program.
+```perl
+use strict;
+use warnings;
+use 5.010;
+#!/usr/bin/perl
+print "File name ". __FILE__ . "\n";
+print "Line Number " . __LINE__ ."\n";
+print "Package " . __PACKAGE__ ."\n";
+# they can't be interpolated
+print "__FILE__ __LINE__ __PACKAGE__\n";
+```
+output:
+```perl
+File name .\hello.pl
+Line Number 28
+Package main
+__FILE__ __LINE__ __PACKAGE__
+```
+
