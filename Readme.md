@@ -79,5 +79,44 @@ Welcome at JavaTpoint
 ## Perl Scalars
 - A scalar contains a single unit of data. It is preceded with a ($) sign followed by letters, numbers and underscores.
 - A scalar can contain anything a number, floating point number, a character or a string.
-- We can define scalars in two ways. First, we can declare and assign value together. Second, we will first declare and then assign value to the scalar.
+- We can define scalars in two ways.
+    - First, we can declare and assign value together.
+    - Second, we will first declare and then assign value to the scalar.
 - In the following example, we'll show both the methods to defince scalars.
+```perl
+use strict;
+use warnings;
+use 5.010;
+#Declairing and assigning value together
+my $color = "Red";
+say $color;
+#Declairing the variable first and then assigning value
+my $city;
+$city = "Delhi";
+say $city;
+```
+Output:
+```output
+Red
+Delhi
+```
+
+## Perl scalar operations
+- In this example we'll perform different operations with two scalar variables $x and $y. In perl, operator tells operand how to behave.
+
+Example:
+```perl
+use strict;
+use warnings;
+use 5.010;
+my $x = 5;
+say $x;
+my $y = 3;
+say $y;
+say $x + $y;
+say $x - $y;
+say $x * $y;
+say $x . $y;
+say $x x $y;
+
+```
