@@ -1,8 +1,23 @@
-use 5.010;  
-use strict;  
-use warnings; 
+use 5.010;
+use strict;
+use warnings;
+
 print "Hello World! with Perl\n";
 print "Enter your name: ";
 my $name = <>; # to read input my keyword is used in perl
 chomp $name; # to del the new line char from the variable
-print "Welcome $name in perl learning journey"
+print "Welcome $name in perl learning journey";
+
+
+my $x = 5;
+say $x; # 5
+
+my $y = 3;
+say $y; # 3
+
+say $x + $y; # 8
+say $x - $y; # 2
+say $x * $y; # 15
+say $x / $y; # 1.6666666667
+say $x . $y; # 53
+say $x x $y; # 555
