@@ -153,3 +153,35 @@ Package main
 __FILE__ __LINE__ __PACKAGE__
 ```
 
+## Perl string context
+- Perl automatically converts `strings to numbers` and `numbers to strings` as per the requirement.
+- For example,
+    - 5 is same as "5".
+    - 5.123 is same as "5.123"
+- But if a string has some characters other than numbers, how would they behave in the arithmetic operations. Let's see it throught an  example.
+```perl
+use strict;
+use warnings;
+use 5.010;
+my $x = "5";
+my $y = "2cm";
+say $x + $y;
+say $x . $y;
+say $x x $y;
+```
+
+output:
+```perl
+# Argument "2cm" isn't numeric in addition (+) at .\hello.pl line 36, <> line 1.
+7
+52cm
+55
+```
+
+- In numerical context, Perl looks at the left side of the string, and convert it to the number.
+- The character becomes the numerical value of the variable.
+- In numerical context (+) the given string "2cm" is regarded as the number 2.
+- Although, it generates warning as
+    `Argument "2cm" isn't numeric in addition (+) at hw.pl line 9.  `
+- What has happened here is, Perl does not convert `$y` into a numerical value. `It just used its numerical part i.e; 2`.
+

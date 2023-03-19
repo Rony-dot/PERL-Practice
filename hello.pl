@@ -28,4 +28,11 @@ print "File name ". __FILE__ . "\n";
 print "Line Number " . __LINE__ ."\n";
 print "Package " . __PACKAGE__ ."\n";
 # they can't be interpolated
-print "__FILE__ __LINE__ __PACKAGE__\n"
+print "__FILE__ __LINE__ __PACKAGE__\n";
+
+
+my $x = "5";
+my $y = "2cm";
+say $x + $y;
+say $x . $y;
+say $x x $y;
