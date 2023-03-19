@@ -45,7 +45,7 @@
 ## Perl use strct
 - If you are using use `strict` statement in a program, then you have to `declare your variable before using` it. It is `mandatory`. Otherwise you'll get an error.
 - the `$a` and `$b` are `special variables` used in perl `sort` function. There is no need to declare these two variables. So it is recommend not to use these two variable except in connection to sort.
-- Variables can be declared using my, our, use vars, state and $person::name (explicit package name). Although, they all have different meanings.
+- Variables can be declared using `my`, `our`, `use vars`, `state` and `$person::name` (explicit package name). Although, they all have different meanings.
 ```perl
     use 5.010;
     use strict;
@@ -65,4 +65,19 @@
     $b = "Welcome at JavaTpoint";
     say $b;
 ```
+output:
+```output
+23
+Anastasia
+9th
+756.5
+John
+1224365
+Welcome at JavaTpoint
+```
 
+## Perl Scalars
+- A scalar contains a single unit of data. It is preceded with a ($) sign followed by letters, numbers and underscores.
+- A scalar can contain anything a number, floating point number, a character or a string.
+- We can define scalars in two ways. First, we can declare and assign value together. Second, we will first declare and then assign value to the scalar.
+- In the following example, we'll show both the methods to defince scalars.
