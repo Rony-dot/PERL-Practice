@@ -207,3 +207,13 @@ if (defined $y) {
   say "NOT";
 }
 ```
+output:
+```perl
+Use of uninitialized value $y in addition (+) at .\hello.pl line 44, <> line 1.
+5
+Use of uninitialized value $y in concatenation (.) or string at .\hello.pl line 45, <> line 1.
+5
+Use of uninitialized value $y in repeat (x) at .\hello.pl line 46, <> line 1.
+
+NOT
+```
