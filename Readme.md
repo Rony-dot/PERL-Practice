@@ -217,3 +217,14 @@ Use of uninitialized value $y in repeat (x) at .\hello.pl line 46, <> line 1.
 
 NOT
 ```
+
+## PERL Operators
+- A perl operator is a series of symbols used as syntax. An operator is a sort of function and its operands are arguments.
+## Perl operator precedence
+- Perl precedence acts like BODMAS in Mathematics. Addition adn Subtraction always comes after the Multiplication ad Division.
+- For example:
+```math
+8 + 4 - 5 * 6 / 3 = 2
+8 + 4 - 30 / 3 = 2
+8 + 4 - 10 = 2
+```
