@@ -12,3 +12,14 @@ print "$months[7]\n";
 print "$months[9]\n";
 print "$months[6]\n";
 print "$months[-3]\n"
+
+
+@array = (you, me, us);
+$array[5] = 4;
+$size = @array;
+$index_max = $#array;
+print "Size:  $size\n";
+print "Maximum Index: $index_max\n";
+
+
+
