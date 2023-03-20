@@ -185,3 +185,25 @@ output:
     `Argument "2cm" isn't numeric in addition (+) at hw.pl line 9.  `
 - What has happened here is, Perl does not convert `$y` into a numerical value. `It just used its numerical part i.e; 2`.
 
+## Perl undef
+- If you'll not define anything in the variable, it is considered as undef. In numerical context, it acts as 0. In string contect, it acts as empty string.
+
+
+
+
+
+```perl
+use strict;
+use warnings;
+use 5.010;
+my $x = "5";
+my $y;
+say $x + $y;
+say $x . $y;
+say $x x $y;
+if (defined $y) {
+  say "defined";
+} else {
+  say "NOT";
+}
+```

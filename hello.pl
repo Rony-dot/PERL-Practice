@@ -36,3 +36,16 @@ my $y = "2cm";
 say $x + $y;
 say $x . $y;
 say $x x $y;
+
+
+#_________PERL_UNDEF________
+my $x = "5";
+my $y;
+say $x + $y;
+say $x . $y;
+say $x x $y;
+if (defined $y) {
+  say "defined";
+} else {
+  say "NOT";
+}
