@@ -14,10 +14,10 @@ print "$months[6]\n";
 print "$months[-3]\n"
 
 
-@array = (you, me, us);
-$array[5] = 4;
-$size = @array;
-$index_max = $#array;
+my @array = (you, me, us);
+my $array[5] = 4;
+my $size = @array;
+my $index_max = $#array;
 print "Size:  $size\n";
 print "Maximum Index: $index_max\n";
 
