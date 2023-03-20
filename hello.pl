@@ -49,3 +49,18 @@ if (defined $y) {
 } else {
   say "NOT";
 }
+
+#_________PERL_Operators____
+my $result1 = 8 + 4 - 5 * 6 / 3 ;
+say $result1;
+my $result2 = 12 * 3 + 2 ** 2 << 1;
+say $result2;
+
+
+#________PERL_Operator_Associativity_____________
+my $result = 3 ** 2 ** 3;
+say $result; # ans: 6561
+
+#_________Perl_Arity___________
+my $result = ( 5 - 2 + 10 ) * 2;
+say $result;     # 26

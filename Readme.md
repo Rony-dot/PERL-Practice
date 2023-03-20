@@ -224,7 +224,74 @@ NOT
 - Perl precedence acts like BODMAS in Mathematics. Addition adn Subtraction always comes after the Multiplication ad Division.
 - For example:
 ```math
-8 + 4 - 5 * 6 / 3 = 2
-8 + 4 - 30 / 3 = 2
-8 + 4 - 10 = 2
+8 + 4 - 5 * 6 / 3 = 2 \\
+8 + 4 - 5 * 2 = 2 \\
+8 + 4 - 10 = 2 \\
 ```
+```perl
+use 5.010;
+use strict;
+use warnings;
+my $result1 = 8 + 4 - 5 * 6 / 3 ;
+say $result1;
+my $result2 = 12 * 3 + 2 ** 2 << 1;
+say $result2;
+```
+output:
+```perl
+2
+80
+```
+
+## Perl Operator Associativity
+- The associativity of an operator helps you to decide whether to ecaluate an equation from `(left to right)` or `(right to left)`.
+- The order of operations is very improtant. Sometimes it is same from both the sides but sometimes it produces drastic difference.
+- For example:
+```math
+3 ** 2 ** 3
+```
+
+    - The answer for this will be `(9**3)` from left to right and
+    - `(3**8)` from right to left
+    - Both the answers have a lot of difference.
+- For example:
+```perl
+use 5.010;
+use strict;
+use warnings;
+my $result = 3 ** 2 ** 3;    # works right to left:  3 ** 8 => 6561
+say $result;
+```
+output:
+```perl
+6561
+```
+
+## Perl Arity
+- The arity of an operator can be defines as the number of operands on which it operates.
+- A `nullary` operator operates on Zero operand,
+- A `unary` operator operates on one operand.
+- A `binary` operator operates on two operands
+- A `listary` operator operates on list of operands.
+- For example:
+```math
+3 + 3 ? 2
+```
+- Arithmetic operators are usually left associative. Here, (3+3) evaluates first and then goes to the second (:) operator.
+- For example
+```perl
+use 5.010;
+use strict;
+use warnings;
+my $result = ( 5 - 2 + 10 ) * 2;
+say $result;
+```
+output:
+```perl
+26
+```
+
+## Perl Fixity
+- Operator Fixity can be defined as its position relative to its operands.
+- For example:
+    - Infix Operator appears between its operands.
