@@ -19,6 +19,7 @@ C-->C2[Double Quoted]
 ```
 
 ## Perl Literals
+- `Notice`: In general, `Perl interpreter sees integers like floating points numbers. For example, if you write 2 in your programs, Perl will see it like 2.0000`
 - Perl numeric literals are numbers. Perl stores number internally as either signed integers or floating-point values.
 - Perl numeric literals can be assigned following types of formats.
 
@@ -37,9 +38,55 @@ C-->C2[Double Quoted]
 - Number with a leading 0 comes in the category of `octal` numbers with base 8.
 - Number containing alphabets (a, b, c, d, e, f) are `hexadecimal` numbers with base 16.
 
+| Representation | Base | Proceed by |
+| - | - | - |
+| Octal | 8 | 0 (zero) |
+| Hexadecimal | 16 | 0x |
+| Binary | 2 | 0b |
+Perl Example:
+```perl
+255;                               # 255 in decimal notation
+0377;                                   # 255 in octal notation
+0xff;                                   # 255 in hexadecimal notation
+0b11111111;                             # 255 in binary notation
+```
+
 ## Perl String Literals
+- The maximum length of a string in Perl depends upon the amount of memory the computer has
 - Perl string literals contain an empty string. ASCII test, ACII with high bits or binary data. There is `no limit` in a string to contain data. They are surrounded by either a single quote (') or double quote (").
 - `Variable interpolation` is allowed in `double quote` string but not in single quote string. Also `special characters preceding with backslash` (\) are supported by `double quote` strings only.
+
+## Single-quoted string literals
+- Single quotation marks are used to enclose data you want to be taken literally. A short example and everything should be clear:
+- Perl Examples:
+```perl
+#!/usr/bin/perl
+$num = 7;
+$txt = 'it is $num';
+print $txt;
+```
+output:
+```perl
+it is $num
+```
+- Here due to single quotes value of $num in not taken and the literal characters ‘$’,’n’, ‘u’ & ‘m’ are added to the value of $txt
+
+## Double-quoted string literals
+- Double quotation marks are used to enclose data that needs to be interpolated before processing.
+- That means that escaped characters and variables aren’t simply literally inserted into later operations, but are evaluated on the spot.
+- Escape characters can be used to insert newlines, tabs, etc.
+```perl
+$num = 7;
+$txt = "it is $num";
+print $txt;
+```
+Output:
+```perl
+it is 7
+```
+- Here due to double quotes value of $num is taken added to the value of $txt
+- Double-quotes interpolate scalar and array variables, but not hashes. On the other hand, you can use double-quotes to interpolate slices of both arrays and hashes.
+
 
 ## Perl variables
 - There are three types of variables:
