@@ -32,3 +32,12 @@ while(my $ln = <$t>){
     print $out "$rec $lineData[1] tata\n";
 }
 close($t);
+
+# file append method 1
+# my $var=<>;
+open(FH,">>outfile.txt");
+print FH "append korchiiiii";
+close(FH);
+
+
+
