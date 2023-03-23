@@ -1,4 +1,27 @@
-ami kochur line
-ami mochur line
-ami murir line
-ami sesh line
+#  line 1 :      job_num cycle_num
+#  line 2 :      envelope_weight paper1_weight paper2_weight(if any)
+#  line 3 - 7 :  ins_weight zip_range1 zip_range2 ... zip_range10
+#               use '0' for ins_weight if no insert for that line
+#
+# Neil, You can change the cyc # but do not remove the "test" flag
+# ISD do not want the enotice for the first run
+#
+# Enotice test : job_cyc: 888888 mm-dd-test
+#                                                 Thanks
+#  Neil, from now on can you set the value for PROC_DATE. This info
+#  will be capture for the indicia project and will be store in a
+#  database.   (mmddyyyy)                Thanks
+#
+DT_JOB_ID: 181330-C22.01-V21355
+JOB_CYC: 181330 03-22
+ENV_PAP: .195 .195 .165
+ENV_HVY: .505
+INSERT1: .165
+INSERT2: 0
+INSERT3: 0
+INSERT4: 0
+INSERT5: 0
+PRINT_FORMAT: dp180
+#MC_BY_ACCT: /home/keep/AccountNumbers-4-16-20.txt y
+ESUP_BY_ACCT: /d/ftpbu/sucubu/paperless/sucu_enotice_paperless.3-23-2023.txt e
+PROC_DATE: 03222023
