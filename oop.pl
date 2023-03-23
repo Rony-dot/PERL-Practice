@@ -6,4 +6,5 @@ use feature "switch";
 use v5.16;
 use lib "lib";
 
-print "lala";
+print "1 lala\n";
+print '2 lala\n';
