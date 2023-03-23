@@ -19,7 +19,7 @@ while(my $line = <$tt>){
 close $tt;
 
 
-# file read method 3
+# file read method 3, and file write
 my $txt = "test.txt";
 open(my $t,'<',$txt) or die "could not open file '$txt' ";
 open(my $out,'>',"outfile.txt") or die "could not open file '$txt' ";
@@ -32,12 +32,15 @@ while(my $ln = <$t>){
     print $out "$rec $lineData[1] tata\n";
 }
 close($t);
+close($out);
 
 # file append method 1
 # my $var=<>;
-open(FH,">>outfile.txt");
-print FH "append korchiiiii";
-close(FH);
+print "file append korar code niche \n";
+open $fh,">>","outfile.txt" or die "cannot open file for append: $_"; # $_ will have the error message;
+print $fh "append korchiiiii\n";
+close($fh) or die "cannot close file: $_";
+
 
 
 
