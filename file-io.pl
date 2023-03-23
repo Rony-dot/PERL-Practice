@@ -41,6 +41,10 @@ open $fh,">>","outfile.txt" or die "cannot open file for append: $_"; # $_ will 
 print $fh "append korchiiiii\n";
 close($fh) or die "cannot close file: $_";
 
-
+# FILE read+write method
+open $fh, '+<', 'outfile.txt' or die "cannot read+write into file, error: $_";
+seek $fh, 0, 0;
+print $fh "ami read+write duitai korte parchi\n";
+close $fh or die "cannot close filee $_";
 
 
