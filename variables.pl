@@ -1,0 +1,13 @@
+use strict;
+use  warnings;
+use diagnostics;
+use feature 'say';
+use feature 'switch';
+use v5.16;
+print "hello world\n";
+my $name = "rakibul\n";
+my ($age,$addr) = (25,"Banani BTCL");
+my $my_info = "$name lives on \"$addr\"\n";
+print $my_info;
+$my_info = qq{$name lives on "$addr"\n};
+print $my_info;
