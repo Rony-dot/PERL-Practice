@@ -4,7 +4,7 @@ use strict;
 use warnings;
 my $i;
 my $j;
-# `last` in perl is equivalent to `brak`
+# `last` in perl is equivalent to `break`
 # `next` in perl is equivalent to `continue`
 OUTER: for ($i = 0; $i < 3; $i++) {
                 for ($j = 0; $j < 3; $j++) {
