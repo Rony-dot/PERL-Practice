@@ -8,3 +8,11 @@ use lib "lib";
 
 print "1 lala\n";
 print '2 lala\n';
+
+use Animal::Cat;
+
+my $whiskers = new Animal::Cat("whiskers", "Derek");
+say $whiskers->getName();
+$whiskers->setName("Whiskers");
+say $whiskers->getName();
+say $whiskers->getSound();
